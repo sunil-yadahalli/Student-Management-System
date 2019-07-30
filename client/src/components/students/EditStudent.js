@@ -40,7 +40,7 @@ export class EditStudent extends Component {
       age: this.refs.age.value,
       email: this.refs.email.value
     };
-    this.editstudent(updatedStudent);
+    this.editStudent(updatedStudent);
   };
 
   onChange = e => {
