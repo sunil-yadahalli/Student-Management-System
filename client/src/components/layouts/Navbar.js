@@ -23,7 +23,7 @@ const Navbar = ({ title, icon }) => {
   );
 };
 Navbar.defaultProps = {
-  title: "Student",
+  title: "Student Management System",
   icon: "fas fa-user"
 };
 Navbar.propTypes = {
