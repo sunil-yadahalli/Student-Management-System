@@ -26,7 +26,7 @@ const StudentItem = ({ student, onDelete }) => {
     // </tr>
     <div className="card bg-light">
       <h3 className="text-primary text-left">{name}</h3>
-      <u1 className="list">
+      <ul className="list">
         <li>
           <i className="fas fa-envelope" />
           {" " + email}
@@ -35,7 +35,7 @@ const StudentItem = ({ student, onDelete }) => {
           {/* <img src={AgeImage} alt="Age" style={{width:"25px", margin:"auto", display:"left"}}/> */}
           {" " + age}
         </li>
-      </u1>
+      </ul>
       <p>
         <NavLink to={`/students/edit/${_id}`} className="btn btn-dark btn-sm">
           Edit

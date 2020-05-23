@@ -67,6 +67,7 @@ export class Students extends Component {
                   />
                 ))}
               </tbody>
+              
             </table> */}
             <form>
               <input

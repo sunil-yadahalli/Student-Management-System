@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
-/*Global Styles */
+/* Global Styles */
 :root {
   --primary-color: #dc3545;
   --dark-color: #333333;
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -28,7 +28,7 @@ a {
   text-decoration: none;
 }
 
-ahover {
+a:hover {
   color: #666;
 }
 
@@ -40,13 +40,16 @@ img {
   width: 100%;
 }
 
-Utilities .container {
+/* Utilities */
+.container {
   max-width: 1100px;
   margin: auto;
-  overflow: 0 2rem;
+  overflow: hidden;
+  padding: 0 2rem;
 }
 
-Text Styles .x-large {
+/* Text Styles*/
+.x-large {
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -95,7 +98,8 @@ Text Styles .x-large {
   text-align: left;
 }
 
-center All .all-center {
+/* Center All */
+.all-center {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -105,13 +109,15 @@ center All .all-center {
   text-align: center;
 }
 
-Cards .card {
+/* Cards */
+.card {
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
 }
 
-List .list {
+/* List */
+.list {
   margin: 0.5rem 0;
 }
 
@@ -119,7 +125,8 @@ List .list {
   padding-bottom: 0.3rem;
 }
 
-Padding .p {
+/* Padding */
+.p {
   padding: 0.5rem;
 }
 .p-1 {
@@ -144,7 +151,8 @@ Padding .p {
   padding: 3rem 0;
 }
 
-Margin .m {
+/* Margin */
+.m {
   margin: 0.5rem;
 }
 .m-1 {
@@ -169,7 +177,8 @@ Margin .m {
   margin: 3rem 0;
 }
 
-Grid .grid-2 {
+/* Grid */
+.grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
@@ -285,7 +294,7 @@ Grid .grid-2 {
   border: #ccc solid 1px;
 }
 
-.btnhover {
+.btn:hover {
   opacity: 0.8;
 }
 
@@ -298,7 +307,8 @@ Grid .grid-2 {
   border-radius: 50%;
 }
 
-Forms input {
+/* Forms */
+input {
   margin: 1.2rem 0;
 }
 
@@ -312,10 +322,12 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="date"],
+input[type="number"],
 select,
 textarea {
   display: block;
-  width: 0.4rem;
+  width: 100%;
+  padding: 0.4rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
 }
@@ -327,7 +339,7 @@ button {
 
 table th,
 table td {
-  padding: 0.4rem;
+  padding: 1rem;
   text-align: left;
 }
 
@@ -335,7 +347,8 @@ table th {
   background: var(--light-color);
 }
 
-Navbar .navbar {
+/* Navbar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -356,7 +369,7 @@ Navbar .navbar {
   margin: 0 0.25rem;
 }
 
-.navbar ahover {
+.navbar a:hover {
   color: var(--light-color);
 }
 
@@ -376,7 +389,8 @@ Navbar .navbar {
     grid-template-columns: 1fr;
   }
 
-  Text Styles .x-large {
+  /* Text Styles */
+  .x-large {
     font-size: 3rem;
   }
 
@@ -388,7 +402,8 @@ Navbar .navbar {
     font-size: 1rem;
   }
 
-  Navbar .navbar {
+  /* Navbar */
+  .navbar {
     display: block;
     text-align: center;
   }
@@ -398,5 +413,3 @@ Navbar .navbar {
     justify-content: center;
   }
 }
-/*App.css
-Displaying App.css.*/

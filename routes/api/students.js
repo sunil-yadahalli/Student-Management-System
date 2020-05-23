@@ -61,7 +61,7 @@ router.put("/:id", async (req, res) => {
     }
     student = await Students.findByIdAndUpdate(
       req.params.id,
-      { $set: UpdatedStudent },
+      { $set: updatedStudent },
       { new: true }
     );
     res.send(student);
